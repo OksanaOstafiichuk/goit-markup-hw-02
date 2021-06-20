@@ -1,7 +1,11 @@
 :root {
   --accent-color: #2196f3;
+  --accent-background: #2f303a;
+  --secondary-background: #f5f4fa;
+  --button-color: #188ce8;
   --text-color: #212121;
   --secondary-text-color: #757575;
+  --accessary-color: #ffffff;
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 }
@@ -9,6 +13,9 @@
 body {
   font-family: var(--main-font);
   color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
@@ -19,6 +26,11 @@ body {
   text-decoration: none;
 }
 
+.button {
+  font-size: 16px;
+  cursor: pointer;
+}
+
 /*======HEADER======*/
 
 .link-logo {
@@ -26,7 +38,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -34,11 +45,14 @@ body {
   color: var(--accent-color);
 }
 
-.nav-link {
+.nav-link,
+.link-contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.nav-link {
   color: var(--text-color);
 }
 
@@ -51,60 +65,47 @@ body {
 }
 
 .link-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
 /*======HERO======*/
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--accent-background);
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--accessary-color);
 }
 
-.hero-button {
+.hero-btn {
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--accessary-color);
   background-color: var(--accent-color);
-  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #188ce8;
+  background-color: var(--button-color);
 }
 
 /* ======FEATURE====== */
 .feature-subtitle {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .feature-text {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -115,90 +116,79 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* ======TEAM====== */
 .team-section {
-  background: #f5f4fa;
+  background: var(--secondary-background);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .team-subtitle {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /* ======FOOTER====== */
 .footer {
-  background: #2f303a;
+  background: var(--accent-background);
 }
 .logo-footer {
-  color: #ffffff;
+  color: var(--accessary-color);
 }
 
 .contact-blok-link {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .contact-blok-link.adress {
-  color: #ffffff;
+  color: var(--accessary-color);
 }
 
 .contact-blok-link:hover,
 .contact-blok-link:focus {
-  color: #ffffff;
+  color: var(--accessary-color);
 }
 
 /* ==========PORTFOLIO========== */
 
 /* ======FILTERS====== */
 .filter-btn {
-  background: #f5f4fa;
+  background: var(--secondary-background);
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--text-color);
-  cursor: pointer;
 }
 
 .current-btn,
 .filter-btn:focus,
 .filter-btn:hover {
-  color: #ffffff;
+  color: var(--accessary-color);
   background-color: var(--accent-color);
 }
-
+/* ======GALLERY====== */
 .gallery-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--text-color);
 }
 
 .gallery-desc {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
